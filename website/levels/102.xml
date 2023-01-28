@@ -1,0 +1,6 @@
+<level>
+    <left>3</left>
+    <right>2</right>
+    <operator>&gt;</operator>
+    <explanation>Расписать, почему 3 &gt; 2</explanation>
+</level>
