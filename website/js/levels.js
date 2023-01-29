@@ -43,6 +43,10 @@ function init() {
   }
   console.log('init clientProgress = ' + JSON.stringify(clientProgress))
   console.log('init currentLevel = ' + JSON.stringify(currentLevel))
+  const spanLevel = document.querySelector('.span__level')
+  const spanName = document.querySelector('#span__name')
+  spanLevel.innerHTML = currentLevel.key
+  spanName.innerHTML = currentLevel.name
   return currentLevel
 }
 

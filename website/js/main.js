@@ -24,23 +24,25 @@ let rightListener = () => {
 rightEl.addEventListener('mouseover',
     rightListener)
 
-const modal = document.querySelector('.modal')
-
 container.addEventListener('click', () => {
     operatorEl.removeEventListener('mouseover', middleListener)
     leftEl.removeEventListener('mouseover', leftListener)
     rightEl.removeEventListener('mouseover', rightListener)
 
-    if (operatorEl.innerHTML === answer) {
-        modal.classList.add('modal__active', 'modal-close')
-        modal.innerHTML = 'Вы выбрали верно!'
-    } else {
-        modal.classList.add('modal__active', 'modal-close')
-        modal.innerHTML = 'Попробуйте еще раз'
-    }
+    modalMain.innerHTML = operatorEl.innerHTML === answer
+        ? 'Вы выбрали верно!'
+        : 'Попробуйте еще раз';
+    showModal(modalMain)
+    // if (operatorEl.innerHTML === answer) {
+    //     showModal(modalMain)
+    //     modalMain.innerHTML = 'Вы выбрали верно!'
+    // } else {
+    //     showModal(modalMain)
+    //     modalMain.innerHTML = 'Попробуйте еще раз'
+    // }
 })
 
-modal.addEventListener('click', () => {
+modalMain.addEventListener('click', () => {
     if (operatorEl.innerHTML === answer) {
         const cookieParse = JSON.parse(getCookie('clientProgress'))
         cookieParse.push(currentLevel.key)

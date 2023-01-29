@@ -27,7 +27,7 @@ body {
     border-radius: 16px;
 }
 
-span {
+.span__level {
     color: rgb(27, 101, 198);
     opacity: 0.7;
     font-size: 2.5rem;
@@ -158,13 +158,27 @@ h1 {
     display: flex;
     justify-content: center;
     align-self: center;
+    text-shadow: 0 1px 0 #fff;
+    text-decoration: none;
+    background-image: url(../img/close.svg);
+    background-repeat: no-repeat;
+    background-size: 38px;
+    background-position-x: 98%;
+    background-position-y: 5%;
+}
+
+.modal:focus,
+.modal:hover {
+    color: rgb(23, 22, 128);
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* .modal-active {
     opacity: 1;
 } */
 
-.modal-close {
+/* .modal-close {
     color: rgb(7, 37, 101);
     text-shadow: 0 1px 0 #fff;
     text-decoration: none;
@@ -174,14 +188,14 @@ h1 {
     background-position-x: 98%;
     background-position-y: 5%;
 
-}
+} */
 
-.modal-close:focus,
+/* .modal-close:focus,
 .modal-close:hover {
     color: rgb(23, 22, 128);
     text-decoration: none;
     cursor: pointer;
-}
+} */
 
 /* ------------- modal window for block info --------------------------- */
 

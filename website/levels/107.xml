@@ -1,5 +1,5 @@
 <body>
-    <left>🍏<br/>🍏<br/>🍏<br/>🍏<br/>🍏</left>
+    <left>🍏🍏🍏<br/>🍏🍏</left>
     <right>🍏🍏🍏🍏🍏</right>
     <operator>=</operator>
     <explanation>Самый примитивный способ представления чисел - <a href="https://en.wikipedia.org/wiki/Unary_numeral_system">унарная система счисления</a>. Количество значащих символов определяет значение числа. При записи в унарной системе счисления можно использовать любые символы: точки, палочки и прочие.</explanation>
