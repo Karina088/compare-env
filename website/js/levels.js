@@ -60,7 +60,7 @@ function loadLevel(level) {
 
   fetch('/levels/' + level.key + '.xml')
     .then(r => r.text())
-    .then(t => new DOMParser().parseFromString(t, 'text/xml'))
+    .then(t => new DOMParser().parseFromString(t, 'text/html'))
     .then(xml => {
       replaceChildren(xml.querySelector('left'), document.querySelector('#left'))
       // replaceChildren(xml.querySelector('operator'), document.querySelector('#operator'))

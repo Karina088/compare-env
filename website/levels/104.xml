@@ -1,39 +1,6 @@
-<level>
-    <!-- Формулы создаются здесь http://www.imatheq.com/imatheq/com/imatheq/math-equation-editor.html -->
-    <left>
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <munderover accent='false' accentunder='false'>
-                <mo>&#x222b;</mo>
-                <mrow>
-                    <mo>&#x2212;</mo>
-                    <mi>&#x221e;</mi>
-                </mrow>
-                <mrow>
-                    <mo>+</mo>
-                    <mi>&#x221e;</mi>
-                </mrow>
-            </munderover>
-            <msup>
-                <mi>e</mi>
-                <mrow>
-                    <mo>-</mo>
-                    <msup>
-                        <mi>x</mi>
-                        <mn>2</mn>
-                    </msup>
-                </mrow>
-            </msup>
-            <mi lspace="0.2em" rspace="0">d</mi>
-            <mi>x</mi>
-        </math>
-    </left>
-    <right>
-        <math xmlns="http://www.w3.org/1998/Math/MathML">
-            <msqrt>
-                <mi>&#x3c0;</mi>
-            </msqrt>
-        </math>
-    </right>
-    <operator>=</operator>
-    <explanation>Расписать, почему этот интеграл равен корню из пи</explanation>
-</level>
+<body>
+    <left>9</left>
+    <right>10</right>
+    <operator>&lt;</operator>
+    <explanation>Изобретение <a href="https://en.wikipedia.org/wiki/Positional_notation">позиционных систем счисления</a> приписывают древним цивилизациям шумеров и вавилонян. Для того, чтобы не договариваться об очень большом количестве разных символов, означающих различные числа, была придумана система, где все числа можно записать ограниченным набором цифр. В данном случае больше то число, где разрядов в записи больше.</explanation>
+</body>

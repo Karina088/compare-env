@@ -1,0 +1,18 @@
+<body>
+    <left>
+	    <span style="font-size:100px;">🃛</span>
+	    <span style="font-size:100px;">🃚</span>
+	    <span style="font-size:100px;">🃙</span>
+	    <span style="font-size:100px;">🃘</span>
+	    <span style="font-size:100px;">🃗</span>
+	</left>
+    <right>
+	    <span style="font-size:100px;">🃖</span>
+		<span style="color:red;font-size:100px;">🃆</span>
+		<span style="color:red;font-size:100px;">🂶</span>
+		<span style="font-size:100px;">🂦</span>
+		<span style="font-size:100px;">🃑</span>
+	</right>
+    <operator>&gt;</operator>
+    <explanation>При игре в <a href="https://en.wikipedia.org/wiki/Poker">покер</a>, для победы требуется набрать в руке самую сильную комбинацию карт. Слева - комбинация стрит-флэш (все карты одной масти и с подряд идущими значениями), справа - каре (4 карты одинакового значения). Стрит-флэш по правилам считается сильнее каре.</explanation>
+</body>

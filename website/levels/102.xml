@@ -1,6 +1,6 @@
-<level>
+<body>
     <left>3</left>
     <right>2</right>
     <operator>&gt;</operator>
-    <explanation>Расписать, почему 3 &gt; 2</explanation>
-</level>
+    <explanation>Число 3 является следующим за числом 2 на воображаемой ленте натуральных чисел, поэтому левая часть в сравнении больше правой.</explanation>
+</body>
