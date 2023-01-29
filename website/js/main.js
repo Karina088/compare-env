@@ -32,11 +32,11 @@ container.addEventListener('click', () => {
     rightEl.removeEventListener('mouseover', rightListener)
 
     if (operatorEl.innerHTML === answer) {
-        modal.classList.add('modal-active', 'modal-close')
-        modal.innerHTML = 'Верно'
+        modal.classList.add('modal__active', 'modal-close')
+        modal.innerHTML = 'Вы выбрали верно!'
     } else {
-        modal.classList.add('modal-active', 'modal-close')
-        modal.innerHTML = 'Неверно'
+        modal.classList.add('modal__active', 'modal-close')
+        modal.innerHTML = 'Попробуйте еще раз'
     }
 })
 
@@ -48,4 +48,3 @@ modal.addEventListener('click', () => {
     }
     location.reload()
 })
-
