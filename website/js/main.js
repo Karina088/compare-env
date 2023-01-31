@@ -33,13 +33,6 @@ container.addEventListener('click', () => {
         ? 'Вы выбрали верно!'
         : 'Попробуйте еще раз';
     showModal(modalMain)
-    // if (operatorEl.innerHTML === answer) {
-    //     showModal(modalMain)
-    //     modalMain.innerHTML = 'Вы выбрали верно!'
-    // } else {
-    //     showModal(modalMain)
-    //     modalMain.innerHTML = 'Попробуйте еще раз'
-    // }
 })
 
 modalMain.addEventListener('click', () => {
