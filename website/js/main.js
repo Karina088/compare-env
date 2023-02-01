@@ -29,10 +29,12 @@ container.addEventListener('click', () => {
     leftEl.removeEventListener('mouseover', leftListener)
     rightEl.removeEventListener('mouseover', rightListener)
 
+
     modalMain.innerHTML = operatorEl.innerHTML === answer
         ? 'Вы выбрали верно!'
         : 'Попробуйте еще раз';
     showModal(modalMain)
+    addHintButton()
 })
 
 modalMain.addEventListener('click', () => {
@@ -43,3 +45,11 @@ modalMain.addEventListener('click', () => {
     }
     location.reload()
 })
+
+function addHintButton() {
+    const newDiv = document.createElement('div')
+    newDiv.innerHTML = `<button class="hint-btn">Подсказка</button>`
+    modalMain.append(newDiv)
+    console.log(newDiv)
+}
+

@@ -1,10 +1,8 @@
-'use strict';
-
 const balls = document.querySelector('.balls')
 const dropBtn = document.querySelectorAll('.dropdown__menu');
 // const modalInfo = document.querySelector('.modal__info');
 const modalInfoAll = document.querySelectorAll('.modal__info');
-const closeBtn = document.querySelector('.modal__close-btn');
+// const closeBtn = document.querySelector('.modal__close-btn');
 const closeBtnAll = document.querySelectorAll('.modal__close-btn');
 const dropdownBtnOne = document.querySelector('#dropdown__menu-btn-one');
 const dropdownBtnTwo = document.querySelector('#dropdown__menu-btn-two');
@@ -43,11 +41,13 @@ dropdownBtnFour.addEventListener('click', () => {
     showModal(modalFour)
 })
 
-closeBtnAll.forEach((el) => el.addEventListener('click', () => {
-    const modalInfoAllFor = modalInfoAll.forEach((el) => el.addEventListener('click', () => {
-        showModal(modalInfoAllFor)
+closeBtnAll.forEach(el => el
+    .addEventListener('click', () => {
+        modalInfoAll.forEach(el => el.addEventListener('click',
+            () => {
+                closeAllModals()
+            }))
     }))
-}))
 
 
 let modals = [dropdown, modalOne, modalTwo, modalThree, modalFour, modalMain]
@@ -76,3 +76,4 @@ function dropdownToggle() {
 }
 
 balls.addEventListener('click', dropdownToggle)
+

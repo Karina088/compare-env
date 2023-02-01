@@ -41,6 +41,12 @@ function init() {
   if (!currentLevel) { // если все уровни решены, выбираем первый
     currentLevel = metadata.levels[0]
   }
+
+  const levelsContent = document.querySelector('#levels_content')
+  for (let levelContent of metadata.levels) {
+    levelsContent.innerHTML += '\n' + `<div style="padding: 6px 0px;"><button type="button" class="modal__levelNext"> ${levelContent.key} ${levelContent.name}</button></div>`
+  }
+
   console.log('init clientProgress = ' + JSON.stringify(clientProgress))
   console.log('init currentLevel = ' + JSON.stringify(currentLevel))
   const spanLevel = document.querySelector('.span__level')

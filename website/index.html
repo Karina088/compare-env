@@ -12,7 +12,7 @@
 <body>
 
     <header class="menu">
-        <h1><span class="span__level">#</span>&nbsp;<span id="span__name">Level loading</span></h1>
+        <h1><span class="span__level"></span>&nbsp;<span id="span__name"></span></h1>
 
         <nav style="position: relative;">
             <div class="balls">
@@ -107,47 +107,11 @@
                                 <h2>Выбрать уровень:</h2>
                             </div>
 
-                            <div class="modal__level-content">
-
-                                <div style="padding: 6px 0px;"><button type="button" class="modal__levelNext">
-                                        101 Разминка
-                                    </button></div>
-                                <div style="padding: 6px 0px;"><button type="button" class="modal__levelNext">102
-                                        Следующий
-                                        шаг &#10004;</button></div>
-                                <div style="padding: 6px 0px;"><button type="button" class="modal__levelNext">103
-                                        Транзитивность</button></div>
-                                <div style="padding: 6px 0px;"><button type="button" class="modal__levelNext">104
-                                        Размер</button></div>
-                                <div style="padding: 6px 0px;"><button type="button" class="modal__levelNext">105
-                                        Позиция</button></div>
-                                <div style="padding: 6px 0px;"><button type="button" class="modal__levelNext">106
-                                        🍎</button></div>
-                                <div style="padding: 6px 0px;"><button type="button" class="modal__levelNext">107
-                                        🍏</button></div>
-                                <div style="padding: 6px 0px;"><button type="button" class="modal__levelNext">108
-                                        Scientia
-                                        potentia est</button></div>
-                                <div><button type="button" class="modal__levelNext">109 Amicitia aequalitas</button>
-                                </div>
-                                <div style="padding: 6px 0px;"><button type="button" class="modal__levelNext">110
-                                        По-русски</button></div>
-                                <div style="padding: 6px 0px;"><button type="button" class="modal__levelNext">111 Я
-                                        календарь переверну</button></div>
-                                <div style="padding: 6px 0px;"><button type="button" class="modal__levelNext">112
-                                        Овсянка,
-                                        сэр</button></div>
-                                <div style="padding: 6px 0px;"><button type="button" class="modal__levelNext">113
-                                        Блэкджек</button></div>
-                                <div style="padding: 6px 0px;"><button type="button" class="modal__levelNext">114
-                                        Покер</button></div>
-                                <div style="padding: 6px 0px;"><button type="button" class="modal__levelNext">115
-                                        ASCII</button></div>
+                            <div class="modal__level-content" id="levels_content">
                             </div>
-
-                        </div>
-                        <div class="modal__close-btn">
-                            <img class="modal__img" src="img/close.svg" alt="photo of a cross">
+                            <div class="modal__close-btn">
+                                <img class="modal__img" src="img/close.svg" alt="photo of a cross">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -207,11 +171,7 @@
             <div class="formula" id="right">2</div>
         </div>
 
-        <div class="modal" id="modal">
-            <div class="modal-window"></div>
-            <button>Подсказка</button>
-        </div>
-
+        <div class="modal" id="modal"></div>
 
     </main>
 
