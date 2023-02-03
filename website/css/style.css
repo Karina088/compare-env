@@ -9,13 +9,32 @@
 
 body {
     font-family: 'Amethysta';
-
     overflow: hidden;
     height: 100vh;
     margin: 0;
-    background-color: #e7e7e7c3;
-    color: #4a4a4a;
+    /* background-color: #e7e7e7c3;
+    color: #4a4a4a; */
     font-size: 18px;
+}
+
+:root {
+    --var-bgcolor: #e7e7e7c3;
+    --var-fontcolor: #4a4a4a;
+}
+
+[dark] {
+    --var-bgcolor: #4f4e4e;
+    --var-fontcolor: #f6f6f6c3;
+}
+
+body {
+    background-color: var(--var-bgcolor);
+    color: var(--var-fontcolor);
+}
+
+.body-fantasy {
+    background-image: url(../img/bg_fantasy.jpg);
+    color: blueviolet;
 }
 
 button {
@@ -255,6 +274,7 @@ h1 {
 
 .modal__title h2 {
     font-family: 'Playfair Display';
+    color: #4a4a4a;
     font-size: 24px;
     font-weight: 900;
     font-weight: bold;
@@ -265,6 +285,7 @@ h1 {
 .modal-wrapper p {
     font-size: 16px;
     margin: 10px 0;
+    color: #4a4a4a;
 }
 
 .modal__level-content {
@@ -308,4 +329,60 @@ h1 {
     font-size: 16px;
     letter-spacing: 0.05rem;
     cursor: pointer;
+}
+
+
+.checkbox__save {
+    margin-top: 14px;
+}
+
+.checkbox__title h4 {
+    letter-spacing: 0.04rem;
+    color: #4a4a4a;
+}
+
+.checkbox {
+    margin: 18px;
+}
+
+.checkbox-item {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    margin: 14px;
+    font-size: 18px;
+    color: #4a4a4a;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    background: #fcfff4;
+    box-shadow: inset 1px 1px 1px rgb(253, 253, 253), 1.5px 1px 2px rgba(117, 113, 113, 0.5);
+}
+
+.checkbox__btn {
+    display: flex;
+    justify-content: end;
+    margin-top: 28px;
+}
+
+.checkbox__btn-save {
+    display: flex;
+    justify-content: center;
+    padding: 10px 22px;
+    border-radius: 12px;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    background-color: #483939;
+    letter-spacing: 0.1rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.checkbox__btn-save:hover {
+    color: rgb(0, 0, 0);
+    background-color: #d2c4c4;
+    box-shadow: inset 1px 1px 3px #4a4a4a;
 }

@@ -50,6 +50,5 @@ function addHintButton() {
     const newDiv = document.createElement('div')
     newDiv.innerHTML = `<button class="hint-btn">Подсказка</button>`
     modalMain.append(newDiv)
-    console.log(newDiv)
 }
 
