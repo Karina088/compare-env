@@ -37,6 +37,29 @@ body {
     color: blueviolet;
 }
 
+.menu-fantasy {
+    margin: 24px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #06f5d544;
+    border-radius: 16px;
+}
+
+.modal-wrapper-fantasy {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 35%;
+    max-height: calc(70vh - 40px);
+    max-width: 460px;
+    width: calc(100vw - 40px);
+    background-color: #edfbf0;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 1px 9px rgba(51, 53, 128, 0.816);
+}
+
 button {
     font-family: 'playfair display';
 }
@@ -331,7 +354,6 @@ h1 {
     cursor: pointer;
 }
 
-
 .checkbox__save {
     margin-top: 14px;
 }
@@ -350,13 +372,13 @@ h1 {
     gap: 18px;
     align-items: center;
     margin: 14px;
-    font-size: 18px;
+    font-size: 22px;
     color: #4a4a4a;
 }
 
 input[type="checkbox"] {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     background: #fcfff4;
     box-shadow: inset 1px 1px 1px rgb(253, 253, 253), 1.5px 1px 2px rgba(117, 113, 113, 0.5);
 }
