@@ -60,6 +60,15 @@ body {
     box-shadow: 0 1px 9px rgba(51, 53, 128, 0.816);
 }
 
+
+.menu-dark {
+    margin: 24px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #9c9c9c;
+    border-radius: 16px;
+}
+
 button {
     font-family: 'playfair display';
 }

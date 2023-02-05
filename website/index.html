@@ -140,16 +140,18 @@
                                         <div class="checkbox__content">
                                             <div class="checkbox-item">
                                                 <label for="checkboxLight">Светлая</label>
-                                                <input type="checkbox" id="checkboxLight" checked>
+                                                <input type="checkbox" id="checkboxLight" class="checkboxTheme"
+                                                    data-theme="light">
                                             </div>
-                                            <div class="checkbox-item">
+                                            <div class="checkbox-item" id="checkboxItemDark">
                                                 <label for="checkboxDark">Темная</label>
-                                                <input type="checkbox" id="checkboxDark"
-                                                    onchange="changeTheme(this.checked)">
+                                                <input type="checkbox" id="checkboxDark" class="checkboxTheme"
+                                                    data-theme="dark">
                                             </div>
                                             <div class="checkbox-item">
                                                 <label for="checkboxFantasy">Фантазийная</label>
-                                                <input type="checkbox" id="checkboxFantasy">
+                                                <input type="checkbox" id="checkboxFantasy" class="checkboxTheme"
+                                                    data-theme="fantasy">
                                             </div>
                                         </div>
                                         <div class="checkbox__btn">
@@ -160,7 +162,7 @@
                                 </div>
 
                             </div>
-                            <div class="modal__close-btn">
+                            <div class="modal__close-btn" id="modalCloseBtnCheckbox">
                                 <img class="modal__img" src="img/close.svg" alt="photo of a cross">
                             </div>
                         </div>
@@ -208,11 +210,10 @@
         </main>
     </div>
 
-
-    <script src="/js/levels.js"></script>
-    <script src="/js/modalWindow.js"></script>
-    <script src="/js/main.js"></script>
-    <script src="/js/checkbox.js"></script>
+    <script src="js/levels.js"></script>
+    <script src="js/modalWindow.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/checkboxMain.js"></script>
 </body>
 
 </html>
