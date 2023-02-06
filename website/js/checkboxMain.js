@@ -14,7 +14,9 @@ checkboxBtnEl.addEventListener('click', () => {
 })
 
 const checkboxAll = document.querySelectorAll('.checkboxTheme')
+
 let theme = getCookie('theme')
+
 if (theme === 'dark') {
     addDarkTheme()
 } else if (theme === 'fantasy') {
@@ -36,6 +38,7 @@ dropdownBtnThree.addEventListener('click', () => {
 modalCloseBtnCheckboxEl.addEventListener('click', () => {
 
     let newTheme = getCookie('theme')
+
     if (newTheme === undefined) {
         newTheme = 'light'
     }
@@ -92,19 +95,30 @@ checkboxAll.forEach(el =>
         const dataTheme = e.target.getAttribute('data-theme')
         const enabled = e.target.checked
 
+        // если подсвечен(включен) чекбокс
         if (enabled) {
+            //то перебираем все элементы класса checkbox-item
             checkboxAll.forEach(checkbox => {
+                // если один из элементов не нажат
                 if (checkbox !== e.target) {
                     const checkboxTheme = checkbox.getAttribute('data-theme')
-
+                    // если мой атрибут равен темной теме
                     if (checkboxTheme === 'dark') {
+                        // то удалить темную тему
                         removeDarkTheme()
                     } else if (checkboxTheme === 'fantasy') {
+                        // удалить фантазийную тему
                         removeFantasyTheme()
                     }
+                    // элемент с методом checked = false
                     checkbox.checked = false
                 }
             })
+            // иначе, если мой атрибут равен темной теме
+            // то удалить темную тему
+            // в ином случае если(мой атрибут = фантаз теме), 
+            //то удалить фантаз тему
+            // и поставить true на светлую тему
         } else {
             if (dataTheme === 'dark') {
                 removeDarkTheme()
@@ -114,8 +128,10 @@ checkboxAll.forEach(el =>
             checkboxLightEl.checked = true
         }
 
-
+        // если мой атрбут будет = светлой теме и включен или не вкл
+        // то ставить светлую тему
         if ((dataTheme === 'light' && enabled) || !enabled) {
+            // переменная theme возвращает куки той темы, которую user выберет
             theme = 'light'
         }
 

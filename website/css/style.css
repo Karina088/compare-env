@@ -60,7 +60,6 @@ body {
     box-shadow: 0 1px 9px rgba(51, 53, 128, 0.816);
 }
 
-
 .menu-dark {
     margin: 24px;
     display: flex;
@@ -318,6 +317,21 @@ h1 {
     font-size: 16px;
     margin: 10px 0;
     color: #4a4a4a;
+}
+
+.modal__summary {
+    margin-top: 22px;
+    color: rgb(27, 101, 198);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.modal__details {
+    border-bottom: 0.5px solid gainsboro;
+}
+
+#modal__hint {
+    margin: 12px 0 12px 0;
 }
 
 .modal__level-content {

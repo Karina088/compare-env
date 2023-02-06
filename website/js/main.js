@@ -46,9 +46,10 @@ modalMain.addEventListener('click', () => {
     location.reload()
 })
 
+
 function addHintButton() {
     const newDiv = document.createElement('div')
-    newDiv.innerHTML = `<button class="hint-btn">Подсказка</button>`
+    newDiv.innerHTML = `<button class="hint-btn">Следущий</button>`
     modalMain.append(newDiv)
 }
 

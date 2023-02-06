@@ -73,10 +73,9 @@ function loadLevel(level) {
     .then(t => new DOMParser().parseFromString(t, 'text/html'))
     .then(xml => {
       replaceChildren(xml.querySelector('left'), document.querySelector('#left'))
-      // replaceChildren(xml.querySelector('operator'), document.querySelector('#operator'))
       answer = xml.querySelector('operator').innerHTML
       replaceChildren(xml.querySelector('right'), document.querySelector('#right'))
-      // replaceChildren(xml.querySelector('explanation'), document.querySelector('#explanation'))
+      replaceChildren(xml.querySelector('explanation'), document.querySelector('#modal__hint'))
     })
 
     .then(() => true)
