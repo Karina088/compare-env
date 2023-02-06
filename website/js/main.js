@@ -34,7 +34,7 @@ container.addEventListener('click', () => {
         ? 'Вы выбрали верно!'
         : 'Попробуйте еще раз';
     showModal(modalMain)
-    addHintButton()
+    addNextButton()
 })
 
 modalMain.addEventListener('click', () => {
@@ -47,7 +47,7 @@ modalMain.addEventListener('click', () => {
 })
 
 
-function addHintButton() {
+function addNextButton() {
     const newDiv = document.createElement('div')
     newDiv.innerHTML = `<button class="hint-btn">Следущий</button>`
     modalMain.append(newDiv)

@@ -11,6 +11,13 @@ const checkboxBtnEl = document.querySelector('#checkboxBtn')
 
 checkboxBtnEl.addEventListener('click', () => {
     setCookie('theme', theme, 365)
+
+    checkboxBtnEl.textContent = 'Сохранено'
+    checkboxBtnEl.disabled = true
+    setTimeout(function () {
+        checkboxBtnEl.textContent = 'Сохранить'
+        checkboxBtnEl.disabled = false;
+    }, 1200);
 })
 
 const checkboxAll = document.querySelectorAll('.checkboxTheme')
