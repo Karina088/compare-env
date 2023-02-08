@@ -7,4 +7,5 @@
  ▪ CSS
  ▪ XML
  ▪ JavaScript
- 
+ ▪ Docker
+ ▪ nginx
