@@ -1,11 +1,11 @@
 # compare-env
 
- .## .*Игра с разными уровнями*
+ .##.*Игра с разными уровнями*
  
- .### Стек: 
- .- HTML5
- .- CSS
- .- XML
- .- JavaScript
- .- Docker
- .- nginx
+ .###Стек: 
+ .-HTML5
+ .-CSS
+ .-XML
+ .-JavaScript
+ .-Docker
+ .-nginx
