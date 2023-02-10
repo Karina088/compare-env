@@ -49,7 +49,7 @@ modalMain.addEventListener('click', () => {
 
 function addNextButton() {
     const newDiv = document.createElement('div')
-    newDiv.innerHTML = `<button class="hint-btn">Следущий</button>`
+    newDiv.innerHTML = `<button class="hint-btn">Следующий</button>`
     modalMain.append(newDiv)
 }
 
