@@ -4,8 +4,8 @@
  
  ## Стек: 
  - HTML5
- -CSS
- -XML
- -JavaScript
- -Docker
- -nginx
+ - CSS
+ - XML
+ - JavaScript
+ - Docker
+ - nginx
